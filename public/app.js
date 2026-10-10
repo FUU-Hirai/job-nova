@@ -145,7 +145,7 @@ function steps(current) {
 }
 function heroVisual() {
   return `<div class="hero-visual">
-    <img src="/hero.jpg" width="1024" height="573" alt="医療・介護の仕事をする人たちのサンプル写真。実在の職場やスタッフではありません">
+    <img src="./hero.jpg" width="1024" height="573" alt="医療・介護の仕事をする人たちのサンプル写真。実在の職場やスタッフではありません">
     <p class="hero-caption">サンプル写真 · 実在の職場ではありません</p>
   </div>`;
 }
