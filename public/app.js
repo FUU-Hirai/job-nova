@@ -145,21 +145,8 @@ function steps(current) {
 }
 function heroVisual() {
   return `<div class="hero-visual">
-    <svg viewBox="0 0 360 320" role="img" aria-label="働く人のイラスト。実在のスタッフではありません">
-      <ellipse cx="168" cy="286" rx="108" ry="16" fill="rgba(255,255,255,.2)"/>
-      <rect x="86" y="168" width="150" height="124" rx="72" fill="#fff"/>
-      <path d="M124 176c8 26 22 36 40 36s32-10 40-36" fill="#0e7a40"/>
-      <circle cx="160" cy="118" r="46" fill="#f3c7aa"/>
-      <path d="M114 128c0-46 22-70 48-70 28 0 50 20 52 54-2 8-10 6-16-8-8-16-20-24-36-24-16 0-28 8-36 22-6 10-12 24-12 26z" fill="#3a312b"/>
-      <path d="M142 118c4-4 10-4 14 0" fill="none" stroke="#3a312b" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M172 118c4-4 10-4 14 0" fill="none" stroke="#3a312b" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M150 138c8 8 16 8 24 0" fill="none" stroke="#c36b62" stroke-width="2.5" stroke-linecap="round"/>
-      <rect x="198" y="188" width="42" height="66" rx="8" fill="#17352c"/>
-      <rect x="203" y="194" width="32" height="44" rx="3" fill="#d9f5e3"/>
-      <circle cx="214" cy="246" r="2" fill="#d9f5e3"/>
-      <circle cx="286" cy="78" r="16" fill="#ffe08a"/>
-    </svg>
-    <p class="hero-caption">イラスト（実在のスタッフではありません）</p>
+    <img src="/hero.jpg" width="1024" height="573" alt="医療・介護の仕事をする人たちのサンプル写真。実在の職場やスタッフではありません">
+    <p class="hero-caption">サンプル写真 · 実在の職場ではありません</p>
   </div>`;
 }
 const wrapper = content => `<div class="container">${content}</div>`;

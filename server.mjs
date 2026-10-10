@@ -10,6 +10,7 @@ const assets = new Map([
   ['/styles.css', ['styles.css', 'text/css']],
   ['/app.js', ['app.js', 'text/javascript']],
   ['/data.js', ['data.js', 'text/javascript']],
+  ['/hero.jpg', ['hero.jpg', 'image/jpeg']],
 ]);
 const server = http.createServer((req, res) => {
   const path = new URL(req.url, 'http://localhost').pathname;

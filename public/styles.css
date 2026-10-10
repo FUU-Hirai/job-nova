@@ -117,9 +117,19 @@ footer small { display: block; font-size: 12px; line-height: 1.7; }
   align-items: center;
   min-height: 340px;
 }
-.hero-visual { display: grid; justify-items: center; }
-.hero-visual svg { width: min(100%, 340px); height: auto; }
+.hero-visual { position: relative; min-width: 0; }
+.hero-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  object-fit: cover;
+}
 .hero-caption {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  max-width: calc(100% - 24px);
   margin: 0;
   background: var(--white);
   color: var(--green);
@@ -476,8 +486,7 @@ blockquote small { display: block; margin-top: 8px; color: var(--muted); font-si
   .hero { padding: 28px 16px 72px; }
   .hero-inner { display: flex; flex-direction: column; min-height: 0; }
   .hero-copy { order: 1; }
-  .hero-visual { order: 2; }
-  .hero-visual svg { width: 220px; }
+  .hero-visual { order: 2; width: 100%; }
   .search-wrap, .container { padding-left: 16px; padding-right: 16px; }
   .search-wrap { margin-top: -40px; }
   .detail-layout { display: block; }
