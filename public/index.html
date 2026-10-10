@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex"><!-- 本番デプロイ時のみ削除（.github/workflows/pages.yml） -->
   <meta name="description" content="JOB NOVA 医療・介護・福祉の求人サイト。企画提案用デモ。求人は架空で、応募は送信されません。">
   <title>JOB NOVA | 職場を知って、安心して応募できる。</title>
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <a class="skip" href="#main">本文へ移動</a>
@@ -32,7 +33,7 @@
     <button id="reset" class="text-button" type="button">デモデータをリセット</button>
   </footer>
   <div id="toast" role="status" aria-live="polite"></div>
-  <script type="module" src="/app.js"></script>
-  <script>new EventSource('/__reload').onmessage = () => location.reload();</script>
+  <script type="module" src="./app.js"></script>
+  <script>if (['localhost', '127.0.0.1'].includes(location.hostname)) new EventSource('/__reload').onmessage = () => location.reload();</script>
 </body>
 </html>
