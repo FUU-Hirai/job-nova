@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JOB NOVA 医療・介護・福祉の求人サイト。企画提案用デモ。求人は架空で、応募は送信されません。">
+  <title>JOB NOVA | 職場を知って、安心して応募できる。</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+  <div class="demo-bar">企画提案用プロトタイプ · 求人はすべて架空です · 応募は外部に送信されません</div>
+  <header>
+    <a class="brand" href="#/" aria-label="JOB NOVA トップ">
+      <span class="brand-mark" aria-hidden="true">+</span>
+      <span class="brand-name">JOB <b>NOVA</b><small>医療・介護・福祉の求人</small></span>
+    </a>
+    <nav aria-label="メインナビゲーション">
+      <a href="#/search">求人を探す</a>
+      <a href="#/saved">♡ お気に入り <span id="saved-count">0</span></a>
+      <a class="nav-account" href="#/mypage">マイページ</a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer>
+    <a class="brand footer-brand" href="#/" aria-label="JOB NOVA トップ">
+      <span class="brand-mark" aria-hidden="true">+</span>
+      <span class="brand-name">JOB <b>NOVA</b></span>
+    </a>
+    <p>職場を知って、安心して応募できる。</p>
+    <small>DEMO / 求人は架空です。実際の求人掲載・採用サービスではありません。</small>
+    <button id="reset" class="text-button" type="button">デモデータをリセット</button>
+  </footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/app.js"></script>
+  <script>new EventSource('/__reload').onmessage = () => location.reload();</script>
+</body>
+</html>
